@@ -1,0 +1,28 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "normalizr": "3.6.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-is": "16.13.1",
+    "react-redux": "7.2.0",
+    "redux": "4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "4.0.0",
+    "redux-orm": "0.16.1",
+    "redux-thunk": "2.3.0",
+    "styled-components": "5.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}
