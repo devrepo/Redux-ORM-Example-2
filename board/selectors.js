@@ -25,12 +25,12 @@ export const getTaskLists = (state) => {
     return taskLists || [];
 }
 export const getTasks = (state, taskListId) => {
-    const tasks = Task(state);
-    const filteredTasks = tasks.filter(task => 
-        {
-            return task.taskListId == taskListId
-        })
-    return filteredTasks || [];
+  const tasks = Task(state);
+  const filteredTasks = tasks.filter(task => 
+    {
+        return task.taskListId == taskListId
+    })
+  return filteredTasks || [];
 }
 
 export const getOtherState = (state) => {

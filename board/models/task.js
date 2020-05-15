@@ -18,4 +18,13 @@ Task.fields = {
     taskList: fk('TaskList', 'tasks')
 };
 
+Task.reducer = (action, Task, session) => {
+    switch (action.type) {
+        case types.EDIT_TASK_SUCCESS: {
+            const {id, newName} = action.payload;
+            Task.withId(id).update({id, name: newName});
+        }
+    }
+}
+
 export default Task;

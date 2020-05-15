@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { connect, useSelector } from 'react-redux';
+import { connect } from 'react-redux';
 
 import { getTasks } from '../../selectors';
 import Task from './ui';
@@ -8,8 +8,8 @@ class TaskWrapper extends Component {
   render(){
     const { tasks } = this.props;
     return (
-      tasks.map( (task) => (
-        <Task key={task.id} {...task}/>
+      tasks.map( (task, index) => (
+        <Task key={task.id} {...task} index={index}/>
       ))
     )
   }

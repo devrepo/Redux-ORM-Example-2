@@ -1,12 +1,10 @@
 import axios from 'axios';
-import { normalize } from 'normalizr';
 
 import { ENDPOINTS_BASE_URL } from '../constants';
 import * as types from '../action_types';
-import schemas from './schema';
 const boardDataForBenchMarking = 
 {
-  "name": "Board Normalized",
+  "name": "Board Old",
   "id": 1,
   "taskLists": [
     {
@@ -65,11 +63,9 @@ const getBoardStarted = () => ({
 });
 
 const getBoardSuccess = (data) => {
-    //Simple response is normalized
-    const normalizedResponse = normalize(data, schemas.boardSchema);
     return {
         type: types.GET_BOARD_SUCCESS,
-        payload: normalizedResponse.entities
+        payload: data
     };
 };
 
