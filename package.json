@@ -18,7 +18,7 @@
     "karma-es6-shim": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "normalizr": "3.6.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
